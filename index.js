@@ -9,7 +9,7 @@ const conn = require("./db/connection.js");
 console.log("Get All ma aaviyu ")
 
 app.get("/",(req,res)=>{
-     const All = await AddModel.find().then((data) => { res.send(data) })
+     const All = AddModel.find().then((data) => { res.send(data) })
 })
 app.use("/Books", authRoutes)
 // app.use("/",conn)

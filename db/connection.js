@@ -14,7 +14,7 @@ mongoose.set("strictQuery", true);
 
 const connection = mongoose
   .connect(
-    "mongodb+srv://vntsolution02:HUQJlLRWxQQh9JnI@cluster0.ys2jhnv.mongodb.net/BooksDB",
+    "mongodb+srv://vntsolution02:vntsolution02@cluster0.ys2jhnv.mongodb.net/BooksDB",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,

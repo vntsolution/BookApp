@@ -9,7 +9,7 @@ const conn = require("./db/connection.js");
 console.log("Get All ma aaviyu ")
 
 app.use("/Books", authRoutes)
-app.use("/",conn)
+// app.use("/",conn)
 app.listen(port, () => {
     console.log("Server start at port no :" + port)
 })

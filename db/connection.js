@@ -6,5 +6,5 @@ mongoose.connect("mongodb+srv://vntsolution02:HUQJlLRWxQQh9JnI@cluster0.ys2jhnv.
         console.log("Databse connection Successfully")
     })
     .catch((error) => {
-        console.log(error)
+        console.log("helloddddddddddd")
     });

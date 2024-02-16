@@ -18,7 +18,7 @@ const getById = async (req, res) => {
 
         const id = req.body.id;
         console.log(id)
-        const All = await AddModel.findOne({ "_id": id }).then((data) => { res.send({data: data}) })
+        const All = await AddModel.findOne({ "_id": id }).then((data) => { res.send({ data: data }) })
         // res.status(200).json({data: AllIds[0], success: true })
     } catch (error) {
         res.status(500).json({ message: error, success: false })
@@ -38,11 +38,12 @@ const add = async (req, res) => {
         //     console.log("+++++++" + data);
         //     res.send(res.body);
         // });
+        console.log("Data inserted ma aaviyu......");
 
         const newData = req.body;
         const data = await AddModel.create(newData).then((data) => {
             console.log("Data inserted Sucessfully");
-            res.send(res.body)
+            res.status(200).json({ message: "Data inserted Successfully", success: true, data: newData });
         })
 
     }
